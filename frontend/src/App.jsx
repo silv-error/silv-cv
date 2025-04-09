@@ -3,7 +3,6 @@ import HomePage from "./pages/home/HomePage"
 import CursorBg from "./components/CursorBg"
 
 function App() {
-
   return (
     <>
       <div className="h-screen relative overflow-hidden">

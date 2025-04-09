@@ -3,11 +3,12 @@ import { CircleAlert, SquareArrowOutUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Content = ({ aboutRef, experienceRef, projectsRef }) => {
+
   return (
     <>
       {/* ABOUT  */}
-      <section id='section1' ref={aboutRef} className='pt-10 lg:pt-20'>
-        <h2 className='font-bold text-slate-100 uppercase py-8 block lg:hidden'>About</h2>
+      <section id='section1' ref={aboutRef} className='pt-10 lg:pt-20 h-full'>
+        <h2 className='font-bold text-slate-100 uppercase py-8 block'>About</h2>
         <p className='text-slate-400 w-full'>
           I’m a <span className='text-slate-100'>developer</span> passionate about building visually appealing and high-performing websites.
           Currently studying Information Technology, I work on side projects in a development club, focusing
@@ -24,8 +25,8 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
       </section>
 
       {/* EXPERIENCE  */}
-      <section id='section2' ref={experienceRef} className={`pt-10 lg:pt-20 lg:mt-20 flex flex-col gap-4`}>
-        <h2 className='font-bold text-slate-100 uppercase py-8 block lg:hidden'>Experience</h2>
+      <section id='section2' ref={experienceRef} className={`pt-10 lg:mt-20 flex flex-col gap-4 h-full`}>
+        <h2 className='font-bold text-slate-100 uppercase py-8 block'>Experience</h2>
         <button 
           className='lg:flex items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start'>
           <h2 className='font-bold text-sm text-slate-400 flex items-center gap-2'>2024 <div className='h-[1px] bg-slate-400 w-4'/> Present</h2>
@@ -77,8 +78,8 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
       </section>
 
       {/* PROJECTS  */}
-      <section id='section3' ref={projectsRef} className='pt-10 lg:pt-20 lg:mt-20 flex flex-col gap-4'>
-      <h2 className='font-bold text-slate-100 uppercase py-8 block lg:hidden'>Projects</h2>
+      <section id='section3' ref={projectsRef} className='pt-10  lg:mt-20 flex flex-col gap-4'>
+      <h2 className='font-bold text-slate-100 uppercase py-8 block'>Projects</h2>
         <Link to={'https://bumble-bai-market.onrender.com/'} target='_blank'>
           <button
             className='flex flex-col-reverse md:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-sm'>
