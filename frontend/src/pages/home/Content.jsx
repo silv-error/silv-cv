@@ -10,7 +10,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
     <>
       {/* ABOUT  */}
       <section id='section1' ref={aboutRef} className='pt-10 lg:pt-10'>
-        <h2 className='font-bold text-slate-100 uppercase py-8 block'>About</h2>
+        <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>About</h2>
         <p className='text-slate-400 w-full'>
           I’m a <span className='text-slate-100'>developer</span> passionate about building visually appealing and high-performing websites.
           Currently studying Information Technology, I work on side projects in a development club, focusing
@@ -28,13 +28,13 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
 
       {/* EXPERIENCE  */}
       <section id='section2' ref={experienceRef} className={`pt-10 lg:mt-20 flex flex-col gap-4`}>
-        <h2 className='font-bold text-slate-100 uppercase py-8 block'>Experience</h2>
+        <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Experience</h2>
         
         {EXPERIENCE.map((experience, index) => (
           <>
             <Link to={experience.link} target="_blank" key={index}>
               <button
-                className='lg:flex items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-sm'>
+                className='lg:flex items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
                 <h2 className='font-medium text-sm text-slate-400 flex items-center gap-1 uppercase opacity-55'>{experience.startDate} <div className='h-[1px] bg-slate-400 w-4'/> {experience.endDate}</h2>
                 <div>
                   <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 mt-2 lg:mt-0'>
@@ -60,13 +60,13 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
 
       {/* PROJECTS  */}
       <section id='section3' ref={projectsRef} className='pt-10  lg:mt-20 flex flex-col gap-4'>
-      <h2 className='font-bold text-slate-100 uppercase py-8 block'>Projects</h2>
+      <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Projects</h2>
         
         {PROJECTS.map((project, index) => (
           <>
             <Link to={project.link} target='_blank' key={index}>
               <button
-                className='flex flex-col-reverse md:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-sm'>
+                className='flex flex-col-reverse md:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
                 <img src={project.img} className='max-w-40 rounded-sm'/>
                 <div>
                   <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 lg:mt-0'>
