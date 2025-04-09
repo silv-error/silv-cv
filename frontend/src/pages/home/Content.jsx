@@ -7,7 +7,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
   return (
     <>
       {/* ABOUT  */}
-      <section id='section1' ref={aboutRef} className='pt-10 lg:pt-20 h-full'>
+      <section id='section1' ref={aboutRef} className='pt-10 lg:pt-10 h-full'>
         <h2 className='font-bold text-slate-100 uppercase py-8 block'>About</h2>
         <p className='text-slate-400 w-full'>
           I’m a <span className='text-slate-100'>developer</span> passionate about building visually appealing and high-performing websites.
