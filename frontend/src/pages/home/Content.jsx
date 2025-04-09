@@ -34,10 +34,10 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
           <>
             <Link to={experience.link} target="_blank" key={index}>
               <button
-                className='lg:flex items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
+                className='flex flex-col lg:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
                 <h2 className='font-medium text-sm text-slate-400 flex items-center gap-1 uppercase opacity-55'>{experience.startDate} <div className='h-[1px] bg-slate-400 w-4'/> {experience.endDate}</h2>
                 <div>
-                  <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 mt-2 lg:mt-0'>
+                  <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 lg:mt-0'>
                     {experience.role}
                     <span className='float-right'><SquareArrowOutUpRight size={20} /></span>
                   </h2>
@@ -67,7 +67,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
             <Link to={project.link} target='_blank' key={index}>
               <button
                 className='flex flex-col-reverse md:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
-                <img src={project.img} className='max-w-40 rounded-sm'/>
+                <img src={project.img} className='max-w-40 rounded-sm mt-1'/>
                 <div>
                   <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 lg:mt-0'>
                     {project.title}
