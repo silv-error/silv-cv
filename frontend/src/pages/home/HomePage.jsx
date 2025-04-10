@@ -4,6 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
+import { motion } from 'framer-motion';
+
 const HomePage = () => {
   const [selectedContent, setSelectedContent] = useState('projects');
   
@@ -19,8 +21,6 @@ const HomePage = () => {
   const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
     const options = {
       root: null, // Use the viewport as the root
       rootMargin: '-10px',
@@ -41,6 +41,7 @@ const HomePage = () => {
     if (projectsRef.current) observer.observe(projectsRef.current);
 
     // Cleanup the observer on component unmount
+
     return () => {
       if (aboutRef.current) {
         observer.unobserve(aboutRef.current);
@@ -63,13 +64,21 @@ const HomePage = () => {
       
       {/* HEADER  */}
       <nav className='lg:h-full pt-10 lg:pt-20 lg:sticky lg:top-0 w-full lg:w-[600px] flex flex-col lg:justify-between gap-8'>
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <h2 className='text-5xl font-bold text-slate-200'>Joe Francis</h2>
           <p className='text-xl font-medium text-slate-300 py-2'>Fullstack Developer</p>
           <p className='max-w-xs opacity-70 pt-2'>
             I provide full stack development designed to improve users' digital experience.
           </p>
-          <ul className='mt-10 hidden lg:block'>
+          <motion.ul className='mt-10 hidden lg:block'
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.9 }}
+          >
             <li className='pt-4'>
               <a
                 href='#about'
@@ -131,9 +140,13 @@ const HomePage = () => {
                 </span>
               </a>
             </li>
-          </ul>
-        </div>
-        <div className='flex flex-wrap gap-4 mb-20'>
+          </motion.ul>
+        </motion.div>
+        <motion.div className='flex flex-wrap gap-4 mb-20'
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <a href="https://github.com/silv-error" target='_blank' title='Github'>
             <FaGithub size={25} />
           </a>
@@ -143,7 +156,7 @@ const HomePage = () => {
           <a href="https://www.instagram.com/joefrancis.silv/" target="_blank" title='Instagram'>
             <FaInstagram size={25} />
           </a>
-        </div>
+        </motion.div>
       </nav>
       
       {/* CONTENT  */}

@@ -1,6 +1,7 @@
 import React from 'react'
-import { CircleAlert, SquareArrowOutUpRight } from 'lucide-react';
+import { ArrowUpRight, CircleAlert } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import EXPERIENCE from '../../utils/db/experience.js'
 import PROJECTS from '../../utils/db/project.js'
@@ -9,7 +10,11 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
   return (
     <>
       {/* ABOUT  */}
-      <section id='section1' ref={aboutRef} className='pt-10 lg:pt-10'>
+      <motion.section id='section1' ref={aboutRef} className='pt-10 lg:pt-10'
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.9 }}
+      >
         <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>About</h2>
         <p className='text-slate-400 w-full'>
           I’m a <span className='text-slate-100'>developer</span> passionate about building visually appealing and high-performing websites.
@@ -24,10 +29,14 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
           In my spare time, I enjoy creating customized websites for personal use, which I also showcase in my <a href='https://github.com/silv-error' target='_blank' className='text-slate-100'>GitHub</a> profile. 
           This not only helps me refine my skills but also allows me to contribute to my portfolio.
         </p>
-      </section>
+      </motion.section>
 
       {/* EXPERIENCE  */}
-      <section id='section2' ref={experienceRef} className={`pt-10 lg:mt-20 flex flex-col gap-4`}>
+      <motion.section id='section2' ref={experienceRef} className={`pt-10 lg:mt-20 flex flex-col gap-4`}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.9 }}
+      >
         <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Experience</h2>
         
         {EXPERIENCE.map((experience, index) => (
@@ -37,9 +46,11 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
                 className='flex flex-col lg:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
                 <h2 className='font-medium text-sm text-slate-400 flex items-center gap-1 uppercase opacity-55'>{experience.startDate} <div className='h-[1px] bg-slate-400 w-4'/> {experience.endDate}</h2>
                 <div>
-                  <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 lg:mt-0'>
+                  <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 lg:mt-0 flex group gap-2'>
                     {experience.role}
-                    <span className='float-right'><SquareArrowOutUpRight size={20} /></span>
+                    <span className='hover:transform translate-y-1.5 -translate-x-1 group-hover:-translate-y-0 group-hover:translate-x-0 transition-all duration-900'>
+                      <ArrowUpRight size={16}/>
+                    </span>
                   </h2>
                   <h2 className='text-sm font-medium text-slate-400 mt-2'>{experience.company} </h2>
                   <p className='text-slate-400 mt-2 text-sm'>
@@ -56,7 +67,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
           </>
         ))}
 
-      </section>
+      </motion.section>
 
       {/* PROJECTS  */}
       <section id='section3' ref={projectsRef} className='pt-10  lg:mt-20 flex flex-col gap-4'>
@@ -69,9 +80,11 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
                 className='flex flex-col-reverse md:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
                 <img src={project.img} className='max-w-40 rounded-sm mt-1'/>
                 <div>
-                  <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 lg:mt-0'>
+                  <h2 className='font-medium text-slate-300 group-hover:text-cyan-300 lg:mt-0 flex group gap-2'>
                     {project.title}
-                    <span className='float-right'><SquareArrowOutUpRight size={20} /></span>
+                    <span className='hover:transform translate-y-1.5 -translate-x-1 group-hover:-translate-y-0 group-hover:translate-x-0 transition-all duration-900'>
+                      <ArrowUpRight size={16}/>
+                    </span>
                   </h2>
                   {!project.hosted && <p className='text-sm font-medium text-blue-200 mt-2 flex items-center gap-1'>
                     <CircleAlert size={20} /> Not yet hosted.
