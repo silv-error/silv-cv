@@ -13,17 +13,14 @@ const HomePage = () => {
 
   const handleContentChange = (content, ref) => {
     setSelectedContent(content);
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+    ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-
-  useEffect(() => {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-  }, []);
-
 
   const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
+    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
     const options = {
       root: null, // Use the viewport as the root
       rootMargin: '-10px',
@@ -81,11 +78,11 @@ const HomePage = () => {
                 ${activeSection === 'section1' || selectedContent === 'about' ? 'opacity-100' : 'opacity-50'}`}
               >
                 <span
-                  className={`h-[1px] group-hover:w-16 group-hover:bg-slate-100 transition-all duration-500 
+                  className={`h-[1px] group-hover:w-16 group-hover:bg-slate-100 transition-all duration-300
                   ${activeSection === 'section1' || selectedContent === 'about' ? 'bg-slate-100 w-16' : 'bg-slate-200 w-8'}`}
                 />
                 <span
-                  className={`font-bold group-hover:text-slate-100 transition-all duration-500 
+                  className={`font-bold group-hover:text-slate-100 transition-all duration-300 
                   ${activeSection === 'section1' || selectedContent === 'about' ? 'text-slate-100' : ''}`}
                 >
                   About
@@ -102,11 +99,11 @@ const HomePage = () => {
                   ${activeSection === 'section2' || selectedContent === 'experience' ? 'opacity-100' : 'opacity-50'}`}
               >
                 <span
-                  className={`h-[1px] group-hover:w-16 group-hover:bg-slate-100 transition-all duration-500
+                  className={`h-[1px] group-hover:w-16 group-hover:bg-slate-100 transition-all duration-300
                     ${activeSection === 'section2' || selectedContent === 'experience' ? 'bg-slate-100 w-16' : 'bg-slate-200 w-8'}`}
                 />
                 <span
-                  className={`font-bold group-hover:text-slate-100 transition-all duration-500
+                  className={`font-bold group-hover:text-slate-100 transition-all duration-300
                     ${activeSection === 'section2' || selectedContent === 'experience' ? 'text-slate-100' : ''}`}
                 >
                   Experience
@@ -115,7 +112,7 @@ const HomePage = () => {
             </li>
             <li className='pt-4'>
               <a
-              href='#projects'
+                href='#projects'
                 onClick={() => {
                   handleContentChange('projects', projectsRef);
                 }}
@@ -123,11 +120,11 @@ const HomePage = () => {
                   ${activeSection === 'section3' || selectedContent === 'projects' ? 'opacity-100' : 'opacity-50'}`}
               >
                 <span
-                  className={`h-[1px] group-hover:w-16 group-hover:bg-slate-100 transition-all duration-500
+                  className={`h-[1px] group-hover:w-16 group-hover:bg-slate-100 transition-all duration-300
                     ${activeSection === 'section3' || selectedContent === 'projects' ?  'bg-slate-100 w-16' : 'bg-slate-200 w-8'}`}
                 />
                 <span
-                  className={`font-bold group-hover:text-slate-100 transition-all duration-500
+                  className={`font-bold group-hover:text-slate-100 transition-all duration-300
                     ${activeSection === 'section3' || selectedContent === 'projects' ? 'text-slate-100' : ''}`}
                 >
                   Projects
