@@ -1,5 +1,6 @@
 {
   "name": "silv-profile",
+  "homepage": "https://silv-error.github.io/silv-cv/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "dist": "^0.1.2",
     "framer-motion": "^12.6.5",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.487.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
