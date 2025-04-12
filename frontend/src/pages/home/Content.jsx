@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 import EXPERIENCE from '../../utils/db/experience.js'
 
 import bumble from '../../assets/bumble.png';
-import soundSpace from '../../assets/sound-space.png';
-import gameParty from '../../assets/game-party-finder.png';
+import soundSpace from '../../assets/soundspace.png';
+import gameParty from '../../assets/game-hunter.png';
 import scriptify from '../../assets/scriptify.png';
 
 const Content = ({ aboutRef, experienceRef, projectsRef }) => {
