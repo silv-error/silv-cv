@@ -1,4 +1,7 @@
 import bumble from "../../assets/bumble.png"
+import scriptify from "../../assets/scriptify.png"
+import soundspace from "../../assets/soundspace.png"
+import gamehunter from "../../assets/game-hunter.png"
 
 const PROJECT = [
   {
@@ -10,7 +13,7 @@ const PROJECT = [
     techstack: ["Node.js", "React", "MongoDB", "Express"]
   },
   {
-    img: require("../../assets/soundspace.png"),
+    img: soundspace,
     title: "Sound Space",
     hosted: false,
     description: `The platform displays basic user’s info, such as: 
@@ -19,7 +22,7 @@ const PROJECT = [
     techstack: ["Python", "Flask", "HTML", "CSS", "Boostrap"]
   },
   {
-    img: require("../../assets/scriptify.png"),
+    img: scriptify,
     title: "Scriptify",
     hosted: false,
     description: "PDF to MP3; Users can select their preferred voice options before the conversion, and the resulting audio can be downloaded.",
@@ -27,7 +30,7 @@ const PROJECT = [
     techstack: ["Python", "Flask", "HTML", "CSS", "Tailwind"]
   },
   {
-    img: require("../../assets/game-hunter.png"),
+    img: gamehunter,
     title: "Game Hunter",
     hosted: false,
     description: "Game Party Finder is a social platform designed to help gamers connect with others and organize gaming sessions.",
