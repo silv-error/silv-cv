@@ -1,5 +1,3 @@
-import bumble from "../../assets/bumble.png";
-
 const PROJECT = [
   {
     img: bumble,
