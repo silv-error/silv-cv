@@ -2,6 +2,7 @@ import React from 'react'
 import { ArrowUpRight, CircleAlert } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { bumble } from '../../assets';
 
 import EXPERIENCE from '../../utils/db/experience.js'
 import PROJECTS from '../../utils/db/project.js'
@@ -39,7 +40,8 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
       >
         <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Experience</h2>
         
-        <img src={'../../assets/bumble.png'} alt='Bumble Bai' className='w-full h-auto object-cover rounded-md'/>
+        <img src={bumble} alt='Bumble Bai' className='w-full h-auto object-cover rounded-md'/>
+        <img src={'../../../public/bumble.png'} alt='Bumble Bai' className='w-full h-auto object-cover rounded-md'/>
 
         {EXPERIENCE.map((experience, index) => (
           <>
