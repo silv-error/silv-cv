@@ -1,6 +1,8 @@
+import bumble from "../../assets/bumble.png";
+
 const PROJECT = [
   {
-    img: "bumble-bai",
+    img: bumble,
     title: "Bumble Bai",
     hosted: true,
     description: "A unique online market platform that mimics the swipe-based interaction of dating apps like Bumble.",
