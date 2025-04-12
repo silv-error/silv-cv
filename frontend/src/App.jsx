@@ -13,7 +13,9 @@ function App() {
         </div>
         <CursorBg />
         <Router>
-          <Switch path="/" element={<HomePage />} />
+          <Switch>
+            <Route path="/" element={<HomePage />} />
+          </Switch>
         </Router>
       </div>
     </>
