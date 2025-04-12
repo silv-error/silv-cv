@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowUpRight, CircleAlert } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { bumble } from '../../assets';
+import { bumble } from '../../assets/bumble.png';
 
 import EXPERIENCE from '../../utils/db/experience.js'
 import PROJECTS from '../../utils/db/project.js'
