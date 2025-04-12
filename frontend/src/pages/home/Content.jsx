@@ -40,7 +40,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
         <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Experience</h2>
         {EXPERIENCE.map((experience, index) => (
           <>
-            <Link to={experience.link} target="_blank" key={index}>
+            <Link to={experience.link} key={index}>
               <button
                 className='flex flex-col lg:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
                 <h2 className='font-medium text-sm text-slate-400 flex items-center gap-1 uppercase opacity-55'>{experience.startDate} <div className='h-[1px] bg-slate-400 w-4'/> {experience.endDate}</h2>
@@ -84,6 +84,9 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
                     <ArrowUpRight size={16}/>
                   </span>
                 </h2>
+                {!project.hosted && <p className='text-sm font-medium text-blue-200 mt-2 flex items-center gap-1'>
+                  <CircleAlert size={20} /> Not yet hosted.
+                </p>}
                 <p className='text-slate-400 mt-2 text-sm'>
                   {project.description}
                 </p>

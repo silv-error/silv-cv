@@ -1,6 +1,6 @@
 const EXPERIENCE = [
   {
-    link: "https://kaizensolutions.koyeb.app/",
+    link: "#",
     startDate: "2024",
     endDate: "Present",
     role: "Full Stack Developer",
@@ -9,7 +9,7 @@ const EXPERIENCE = [
     techstack: ["Node.js", "React", "MongoDB", "Express", "Flask", "Python"]
   },
   {
-    link: "#",
+    link: "https://kaizensolutions.koyeb.app/",
     startDate: "2024",
     endDate: "Present",
     role: "Back End Developer",
