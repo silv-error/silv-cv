@@ -105,3 +105,23 @@
   font-weight: 900;
   font-style: italic;
 }
+
+
+.group {
+  display: flex; /* or any desired layout */
+}
+
+.project {
+  opacity: 1; /* Default opacity */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+/* When hovering over the group */
+.group:hover .project {
+  opacity: 0.4; /* All projects get 40% opacity */
+}
+
+/* When hovering over an individual project */
+.project:hover {
+  opacity: 0.95; /* The hovered project gets 95% opacity */
+}

@@ -1,7 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "silv-profile",
-  "homepage": "https://silv-error.github.io/silv-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,15 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^12.6.5",
     "lucide-react": "^0.487.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.5.0"
   },
@@ -31,39 +28,9 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "vite": "^6.2.0"
-=======
-  "name": "portfolio",
-  "version": "1.0.0",
-  "main": "backend/server.js",
-  "scripts": {
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/silv-error/portfolio.git"
-  },
-  "keywords": [],
-  "type": "module",
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/silv-error/portfolio/issues"
-  },
-  "homepage": "https://github.com/silv-error/portfolio#readme",
-  "description": "",
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.9"
->>>>>>> 592bd606dfb57eccf7ca1de4aa3069a3204b45e2
   }
 }
