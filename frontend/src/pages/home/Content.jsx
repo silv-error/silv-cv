@@ -39,7 +39,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
       >
         <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Experience</h2>
         
-        <img src={bumble} alt='Bumble Bai' className='w-full h-auto object-cover rounded-md'/>
+        <img src={'/bumble.png'} alt='Bumble Bai' className='w-full h-auto object-cover rounded-md'/>
 
         {EXPERIENCE.map((experience, index) => (
           <>
