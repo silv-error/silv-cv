@@ -80,7 +80,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
       <section id='section3' ref={projectsRef} className='pt-10  lg:mt-20 flex flex-col gap-4'>
       <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Projects</h2>
         
-      <Link to={"https://github.com/silv-error/bumble-bai"} target='_blank' key={index}>
+      <Link to={"https://github.com/silv-error/bumble-bai"} target='_blank'>
         <button
           className='flex flex-col-reverse md:flex-row items-start gap-4 hover:bg-gray-700 hover:bg-opacity-50 backdrop-blur-md bg-opacity-25 rounded-md relative p-4 lg:right-4 group text-start hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg'>
           <img src={bumble} className='max-w-40 rounded-sm mt-1'/>
