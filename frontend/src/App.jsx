@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Switch } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import HomePage from "./pages/home/HomePage"
 import CursorBg from "./components/CursorBg"
 import "./App.css"
@@ -12,9 +12,9 @@ function App() {
           <div className="absolute inset-0 backdrop-blur-lg "/>
         </div>
         <CursorBg />
-        <Router>
+        <Routes>
             <Route path="/" element={<HomePage />} />
-        </Router>
+        </Routes>
       </div>
     </>
   )
