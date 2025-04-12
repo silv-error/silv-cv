@@ -9,7 +9,7 @@ const PROJECT = [
     title: "Bumble Bai",
     hosted: true,
     description: "A unique online market platform that mimics the swipe-based interaction of dating apps like Bumble.",
-    link: "https://github.com/silv-error/bumble-bai",
+    link: "https://bumble-bai-market.onrender.com/",
     techstack: ["Node.js", "React", "MongoDB", "Express"]
   },
   {
