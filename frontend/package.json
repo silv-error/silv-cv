@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://silv-error.github.io/silv-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "daisyui": "^4.12.24",
     "framer-motion": "^12.6.3",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.487.0",
     "portfolio": "file:..",
     "react": "^19.0.0",
