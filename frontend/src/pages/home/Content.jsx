@@ -39,6 +39,7 @@ const Content = ({ aboutRef, experienceRef, projectsRef }) => {
       >
         <h2 className='font-bold text-slate-200 uppercase py-8 tracking-widest'>Experience</h2>
         
+        <img src='/bumble-bai.png' alt='Bumble Bai' className='w-full h-auto object-cover rounded-md'/>
         {EXPERIENCE.map((experience, index) => (
           <>
             <Link to={experience.link} target="_blank" key={index}>
