@@ -13,9 +13,7 @@ function App() {
         </div>
         <CursorBg />
         <Router>
-          <Switch>
             <Route path="/" element={<HomePage />} />
-          </Switch>
         </Router>
       </div>
     </>
