@@ -81,7 +81,7 @@ const HomePage = () => {
           >
             <li className='pt-4'>
               <a
-                href='#about'
+                href='#'
                 onClick={() => handleContentChange('about', aboutRef)}
                 className={`flex items-center gap-4 group hover:opacity-100 max-w-fit text-xs tracking-widest uppercase
                 ${activeSection === 'section1' || selectedContent === 'about' ? 'opacity-100' : 'opacity-50'}`}
@@ -100,7 +100,7 @@ const HomePage = () => {
             </li>
             <li className='pt-4'>
               <a
-                href='#experience'
+                href='#'
                 onClick={() => {
                   handleContentChange('experience', experienceRef);
                 }}
@@ -121,7 +121,7 @@ const HomePage = () => {
             </li>
             <li className='pt-4'>
               <a
-                href='#projects'
+                href='#'
                 onClick={() => {
                   handleContentChange('projects', projectsRef);
                 }}
