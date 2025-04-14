@@ -13,6 +13,14 @@ const PROJECT = [
     techstack: ["Node.js", "React", "MongoDB", "Express"]
   },
   {
+    img: gamehunter,
+    title: "Game Hunter",
+    hosted: true,
+    description: "Game Party Finder is a social platform designed to help gamers connect with others and organize gaming sessions.",
+    link: "https://game-hunter.onrender.com/",
+    techstack: ["Node.js", "React", "MongoDB", "Express"]
+  },
+  {
     img: soundspace,
     title: "Sound Space",
     hosted: false,
@@ -28,14 +36,6 @@ const PROJECT = [
     description: "PDF to MP3; Users can select their preferred voice options before the conversion, and the resulting audio can be downloaded.",
     link: "",
     techstack: ["Python", "Flask", "HTML", "CSS", "Tailwind"]
-  },
-  {
-    img: gamehunter,
-    title: "Game Hunter",
-    hosted: false,
-    description: "Game Party Finder is a social platform designed to help gamers connect with others and organize gaming sessions.",
-    link: "",
-    techstack: ["Node.js", "React", "MongoDB", "Express"]
   },
 ]
 
