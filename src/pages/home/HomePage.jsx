@@ -23,7 +23,7 @@ const HomePage = () => {
   useEffect(() => {
     const options = {
       root: null, // Use the viewport as the root
-      rootMargin: '-10px',
+      rootMargin: '',
       threshold: 0.75 // Trigger when 50% of the section is in view
     };
 
@@ -59,6 +59,7 @@ const HomePage = () => {
   useEffect(() => {
     setSelectedContent("");
   }, [activeSection]);
+
   return (
     <div className='px-4 lg:flex justify-center h-screen overflow-y-scroll overflow-x-hidden relative z-10'>
       

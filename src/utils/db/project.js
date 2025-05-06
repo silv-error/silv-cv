@@ -2,6 +2,7 @@ import bumble from "../../assets/bumble.png"
 import scriptify from "../../assets/scriptify.png"
 import soundspace from "../../assets/soundspace.png"
 import gamehunter from "../../assets/game-hunter.png"
+import netflix from "../../assets/netflix.png"
 
 const PROJECT = [
   {
@@ -37,6 +38,14 @@ const PROJECT = [
     link: "",
     techstack: ["Python", "Flask", "HTML", "CSS", "Tailwind"]
   },
+  {
+    img: netflix,
+    title: "Netflix Clone",
+    hosted: true,
+    description: "A responsive Netflix clone web app showcasing dynamic movie and TV show browsing with a modern UI and mobile-friendly design.",
+    link: "https://netflix-clone-izxy.onrender.com/",
+    techstack: ["Node.js", "React", "MongoDB", "Express"]
+  }
 ]
 
 export default PROJECT;
