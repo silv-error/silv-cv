@@ -6,6 +6,14 @@ import netflix from "../../assets/netflix.png"
 
 const PROJECT = [
   {
+    img: netflix,
+    title: "Netflix Clone",
+    hosted: true,
+    description: "A responsive Netflix clone web app showcasing dynamic movie and TV show browsing with a modern UI and mobile-friendly design.",
+    link: "https://netflix-clone-izxy.onrender.com/",
+    techstack: ["Node.js", "React", "MongoDB", "Express"]
+  },
+  {
     img: bumble,
     title: "Bumble Bai",
     hosted: true,
@@ -38,14 +46,6 @@ const PROJECT = [
     link: "",
     techstack: ["Python", "Flask", "HTML", "CSS", "Tailwind"]
   },
-  {
-    img: netflix,
-    title: "Netflix Clone",
-    hosted: true,
-    description: "A responsive Netflix clone web app showcasing dynamic movie and TV show browsing with a modern UI and mobile-friendly design.",
-    link: "https://netflix-clone-izxy.onrender.com/",
-    techstack: ["Node.js", "React", "MongoDB", "Express"]
-  }
 ]
 
 export default PROJECT;
